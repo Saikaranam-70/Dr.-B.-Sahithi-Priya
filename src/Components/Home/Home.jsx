@@ -27,7 +27,7 @@ const Home = () => {
       >
         <h1 className="doctor-name">Dr. B. Sahithi Priya</h1>
         <h2 className="designation">
-          Consultant Breast and Endocrine Surgeon
+          Endocrine and Oncoplastic Breast Surgeon
         </h2>
         <span className="qualification">
           M.S (General Surgery), M.Ch (Endocrine Surgery)

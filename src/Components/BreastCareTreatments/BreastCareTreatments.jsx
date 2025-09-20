@@ -1,6 +1,6 @@
 import React from "react";
 import "./BreastCareTreatments.css";
-import Mastectomy from "../../assets/breast_cancer_page/Mastectomy.png";
+import Mastectomy from "../../assets/breast_cancer_page/mastectomy.png";
 import Breast_Conserving_Surgery from "../../assets/breast_cancer_page/Breast Conserving Surgery.png";
 import Oncoplasty from "../../assets/breast_cancer_page/Oncoplasty.png";
 import Sentinel_Lymph_Node_Dissection from "../../assets/breast_cancer_page/Sentinel Lymph Node Dissection.png";

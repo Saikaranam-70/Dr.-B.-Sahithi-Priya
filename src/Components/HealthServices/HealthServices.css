@@ -1,0 +1,109 @@
+/* Container and Title */
+.health-container {
+  padding: 60px 10%;
+  background: linear-gradient(135deg, #f5f7fa, #e8ecf2);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.health-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #222;
+  position: relative;
+}
+
+.health-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 12px auto 0;
+  background: linear-gradient(90deg, #ff69b4, #ff1493); /* Pink gradient underline */
+  border-radius: 2px;
+}
+
+/* Grid Layout */
+.health-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Card Styles */
+.health-card {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  padding: 25px 20px;
+  text-align: center;
+  color: #333;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.health-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Icon Circle */
+.icon-box {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #ffc0cb, #ff69b4); /* Pink gradient */
+  box-shadow: inset -4px -4px 10px #fff, inset 4px 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.icon-box img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(-50deg); /* Icon color white/pink-friendly */
+}
+
+.health-card:hover .icon-box {
+  transform: scale(1.1);
+  background: linear-gradient(145deg, #ff9ccf, #ff4d94); /* Hover pink gradient */
+}
+
+/* Card Title and Description */
+.health-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #111;
+}
+
+.health-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Learn More Button */
+.card-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 20px;
+  background: linear-gradient(135deg, #ff69b4, #ff1493); /* Pink gradient */
+  color: white;
+  font-weight: 500;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.card-button:hover {
+  background: linear-gradient(135deg, #ff4d94, #ff0080);
+  transform: scale(1.05);
+}

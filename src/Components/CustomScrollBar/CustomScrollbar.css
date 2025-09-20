@@ -1,0 +1,54 @@
+/* Full-screen scroll wrapper */
+.scroll-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* hide native scrollbar */
+  z-index: 999; /* make sure it's on top */
+}
+
+/* Scrollable content */
+.scroll-content {
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 50px; /* space for custom scrollbar */
+  box-sizing: content-box;
+}
+
+/* Scrollbar track */
+.scrollbar-track {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px; /* adjust for your design */
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 25px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Scrollbar thumb */
+.scrollbar-thumb {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.scrollbar-thumb:hover {
+  transform: scale(1.1);
+}
+
+/* Stethoscope icon */
+.thumb-icon {
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  user-select: none;
+}

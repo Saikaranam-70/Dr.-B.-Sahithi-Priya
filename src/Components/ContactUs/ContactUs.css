@@ -1,0 +1,128 @@
+/* General container */
+.contact-container {
+  min-height: 100vh;
+  background: #fdeef1; /* light pink */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Card wrapper */
+.contact-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #f5e6d3; /* light brown */
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  overflow: hidden;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* Left side - info */
+.contact-info {
+  background: #fbd2d7;
+  padding: 2.5rem;
+  color: #5c4033;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  color: #b91c1c;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.contact-details p {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.social-icons a {
+  color: #5c4033;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #b91c1c;
+}
+
+/* Right side - form */
+.contact-form {
+  background: #fff;
+  padding: 2.5rem;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  color: #5c4033;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #5c4033;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 1.2rem;
+  padding: 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid #f28b82;
+  box-shadow: 0 0 6px rgba(242, 139, 130, 0.4);
+}
+
+.contact-form button {
+  background: #ec4899;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #db2777;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-card {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,106 @@
+.bannerComponent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  color: #fff;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  background: url('../../assets/surgery.jpg') no-repeat center center/cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  gap: 40px;
+}
+
+/* Overlay for glossy effect */
+.bannerComponent::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5); 
+  backdrop-filter: blur(6px);
+  z-index: 0;
+}
+
+.left, .right {
+  position: relative;
+  z-index: 1;
+}
+
+.bannerComponentDesc {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  max-width: 600px;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.phone {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.number {
+  font-weight: bold;
+  color: #ffcf33;
+  text-shadow: 0 0 8px rgba(255, 207, 51, 0.8);
+}
+
+.bannerComponentButton {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #ff8a00, #e52e71);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(229, 46, 113, 0.4);
+  transition: all 0.3s ease;
+}
+
+.bannerComponentButton:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(229, 46, 113, 0.6);
+  background: linear-gradient(135deg, #e52e71, #ff8a00);
+}
+
+/* 🔹 Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .bannerComponent {
+    padding: 40px 50px;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .bannerComponentDesc {
+    font-size: 1.8rem;
+    max-width: 100%;
+  }
+
+  .phone {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .bannerComponent {
+    padding: 30px 20px;
+  }
+
+  .bannerComponentDesc {
+    font-size: 1.5rem;
+  }
+
+  .phone {
+    font-size: 1.1rem;
+  }
+
+  .bannerComponentButton {
+    width: 100%;
+    max-width: 280px;
+  }
+}
